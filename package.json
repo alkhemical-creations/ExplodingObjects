@@ -1,0 +1,37 @@
+{
+  "name": "explodingobjects",
+  "version": "1.0.0",
+  "description": "Exploding3d",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akella/ExplodingObjects.git"
+  },
+  "author": "me",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/akella/ExplodingObjects/issues"
+  },
+  "homepage": "https://github.com/akella/ExplodingObjects#readme",
+    "rangeStrategy": "pin",
+    "ignorePaths": ["examples/**"],
+    "packageRules": {
+      "packagePatterns": ["^react.*"],
+      "groupName": "react",
+      "automerge": true,
+      "timezone": "America/New_York",
+      "schedule": "before 5am every weekday",
+      "lockFileMaintenance": {
+        "enabled": true,
+        "packageNames": ["aws-sdk"],
+        "schedule": "before 5am every wednesday"
+      }
+  }
+}
+    
+    
+
+
